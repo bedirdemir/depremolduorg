@@ -10,3 +10,12 @@
         @apply bg-background;
     }
 }
+
+@layer components {
+    .modal {
+        @apply fixed inset-0 bg-gray-600 bg-opacity-60 flex items-center justify-center opacity-0 invisible;
+    }
+    .modal.active {
+        @apply visible opacity-100;
+    }
+}
