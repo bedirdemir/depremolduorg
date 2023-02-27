@@ -130,7 +130,9 @@
 <script>
 import ListItem from './ListItem.vue';
 import moment from 'moment';
+import 'moment/dist/locale/tr';
 import 'moment/locale/tr';
+
 moment.locale('tr');
 
 export default {
