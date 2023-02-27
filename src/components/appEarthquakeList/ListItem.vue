@@ -1,7 +1,7 @@
 <template>
     <div class="modal" :class="{active: $store.state.EarthquakeList.isModalActive}">
-        <div class="bg-white p-3 rounded flex flex-col max-w-screen-sm">
-            <div class="flex justify-end mb-4">
+        <div class="bg-white p-3 rounded flex flex-col w-11/12">
+            <div class="flex justify-end mb-3">
                 <a @click="$store.commit('EarthquakeList/modalToggle')" class="flex items-center bg-primary text-white rounded cursor-pointer p-2">
                     <svg class="w-6 mr-1" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
 <g clip-path="url(#clip0_429_11083)">
@@ -16,7 +16,7 @@
                 Kapat
                 </a>
             </div>
-            <div id="mapContainer" class="w-96 h-96"></div>
+            <div id="mapContainer" class="h-96"></div>
         </div>
     </div>
 </template>
