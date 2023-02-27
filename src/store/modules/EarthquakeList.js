@@ -6,12 +6,6 @@ export default {
 		isLoaded: false,
 		selectedItem: null
 	},
-	getters: {
-		_myGetter(){
-			const abc = "abc";
-			return abc
-		}
-	},
 	mutations: {
 		modalToggle(state, item){
 			state.isModalActive = !state.isModalActive;
