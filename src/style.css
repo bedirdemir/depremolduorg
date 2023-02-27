@@ -18,4 +18,10 @@
     .modal.active {
         @apply visible opacity-100;
     }
+    .loading-svg {
+        margin: auto;
+        display: block; 
+        shape-rendering: auto;
+        width: 5rem;
+    }
 }
