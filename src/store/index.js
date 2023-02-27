@@ -1,4 +1,5 @@
 import { createStore } from "vuex";
+import { appAxios } from '../utils/appAxios.js';
 
 import EarthquakeList from "./modules/EarthquakeList.js";
 import EarthquakeMap from "./modules/EarthquakeMap.js";
@@ -10,6 +11,14 @@ const store = createStore({
 	modules: {
 		EarthquakeList,
 		EarthquakeMap
+	},
+	actions: {
+		getData({state}){
+			appAxios.get("/")
+			.then(res => {
+				state.EarthquakeList.earthquakeList = res.data;
+			});
+		}
 	}
 });
 

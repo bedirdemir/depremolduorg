@@ -1,20 +1,26 @@
 <template>
-    <section class="p-4">
+    <section class="px-1 py-2 lg:p-4">
         <list-item></list-item>
         <ul>
-            <li>
+            <li v-for="(earthquake,i) in $store.state.EarthquakeList.earthquakeList" :key="i" class="mb-2">
                 <div class="flex justify-between p-3 border rounded w-full">
                     <div class="flex items-center gap-5 w-full">
-                        <span class="border rounded bg-yellow-300 p-2 font-medium text-lg">4.6</span>
+                        <span :class="getDangerColor(earthquake.magnitude)" class="flex flex-col items-center border rounded px-4 py-3 font-semibold text-lg lg:py-2 lg:px-3">
+                            {{ earthquake.magnitude }}
+                            <span class=" text-xs font-normal">
+                                {{ earthquake.scale }}
+                            </span>
+                        </span>
                         <div class="flex flex-col w-full">
                             <div>
-                                <h2 class=" text-lg font-semibold">Şehir İsmi</h2>
-                                <div class="flex items-center gap-1">
+                                <h2 class="text-l font-semibold">{{ earthquake.region }}</h2>
+                                <div class="flex space-x-1 items-center">
                                     <svg class="w-3 inline-block text-gray-500" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M12,6a1,1,0,0,0-1,1v5a1,1,0,0,0,.293.707l3,3a1,1,0,0,0,1.414-1.414L13,11.586V7A1,1,0,0,0,12,6Z
                                         M23.812,10.132A12,12,0,0,0,3.578,3.415V1a1,1,0,0,0-2,0V5a2,2,0,0,0,2,2h4a1,1,0,0,0,0-2H4.827a9.99,9.99,0,1,1-2.835,7.878A.982.982,0,0,0,1,12a1.007,1.007,0,0,0-1,1.1,12,12,0,1,0,23.808-2.969Z"/></svg>
-                                    <span>10 dk önce</span>
-                                    <time>15/2/2023 21:45:24</time>
+                                    <span class=" font-medium">{{ getRelativeTime(earthquake.date, earthquake.time) }}</span>
+                                    
+                                    <time>| {{earthquake.date}} {{ earthquake.time }}</time>
                                 </div>
                             </div>
                             <div class="flex justify-between mt-1">
@@ -45,7 +51,7 @@
 
 </g>
                                     </svg>
-                                    <span>5 km</span>
+                                    <span>{{ earthquake.depth }} km</span>
                                 </div>
                                 <a @click="$store.commit('EarthquakeList/modalToggle', 'gelen Başlık')" class="underline text-sm cursor-pointer">
                                     Konumu görüntüle
@@ -56,20 +62,37 @@
                     </div>
                 </div>
             </li>
-       
         </ul>
-
-        <!-- <a @click="openModal">Aç</a> -->
-        
         
     </section>
 </template>
 <script>
 import ListItem from './ListItem.vue';
+import moment from 'moment';
+import 'moment/locale/tr';
+moment.locale('tr');
 
 export default {
     components: {
         ListItem
+    },
+    created(){
+        this.$store.dispatch("getData")
+    },
+    methods: {
+        getRelativeTime(date, time){
+            return moment(`${date} ${time}`, "YYYY.MM.DD hh:mm:ss").fromNow();
+        },
+        getDangerColor(magnitude){
+            magnitude = Number(magnitude);
+            if (magnitude >= 6.0){
+                return {'bg-red-700': true, 'text-white': true}
+            }else if (magnitude > 4.5 && magnitude < 6.0){
+                return {'bg-red-500': true, 'text-white': true}
+            }else{
+                return {'bg-yellow-300': true}
+            }
+        }
     }
 }
 </script>

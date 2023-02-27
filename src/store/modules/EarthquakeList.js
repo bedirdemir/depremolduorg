@@ -1,7 +1,8 @@
 export default {
     namespaced: true,
 	state: {
-		isModalActive: false
+		isModalActive: false,
+		earthquakeList: null
 	},
 	getters: {
 		_myGetter(){
