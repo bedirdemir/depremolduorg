@@ -3,7 +3,8 @@ export default {
 	state: {
 		isModalActive: false,
 		earthquakeList: null,
-		isLoaded: false
+		isLoaded: false,
+		selectedItem: null
 	},
 	getters: {
 		_myGetter(){
@@ -12,9 +13,9 @@ export default {
 		}
 	},
 	mutations: {
-		modalToggle(state, m){
+		modalToggle(state, item){
 			state.isModalActive = !state.isModalActive;
-			console.log(m);
+			state.selectedItem = item;
 		}
 	}
 };

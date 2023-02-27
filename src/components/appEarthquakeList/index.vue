@@ -1,6 +1,6 @@
 <template>
     <section class="px-1 py-2 lg:p-4">
-        <list-item></list-item>
+        <list-item v-if="$store.state.EarthquakeList.isModalActive"></list-item>
         <ul v-if="$store.state.EarthquakeList.isLoaded">
             <li v-for="(earthquake,i) in $store.state.EarthquakeList.earthquakeList" :key="i" class="mb-2">
                 <div class="flex justify-between p-3 border rounded w-full">
@@ -53,7 +53,7 @@
                                     </svg>
                                     <span>{{ earthquake.depth }} km</span>
                                 </div>
-                                <a @click="$store.commit('EarthquakeList/modalToggle', 'gelen Başlık')" class="underline text-sm cursor-pointer">
+                                <a @click="$store.commit('EarthquakeList/modalToggle', earthquake)" class="underline text-sm cursor-pointer">
                                     Konumu görüntüle
                                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="w-3 inline-block"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
                                 </a>
