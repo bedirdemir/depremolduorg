@@ -1,8 +1,8 @@
 <template>
-    <section class="px-2 py-3 lg:p-4">
+    <section class="px-2 py-3 min-h-screen lg:p-4">
         <list-item v-if="$store.state.EarthquakeList.isModalActive"></list-item>
         <ul v-if="$store.state.EarthquakeList.isLoaded">
-            <li v-for="(earthquake,i) in $store.state.EarthquakeList.earthquakeList" :key="i" class="mb-2">
+            <li v-for="(earthquake,i) in $store.state.EarthquakeList.earthquakeList" :key="i" class="mb-2 shadow">
                 <div class="flex justify-between p-3 border rounded w-full">
                     <div class="flex items-center gap-5 w-full">
                         <span :class="getDangerColor(earthquake.magnitude)" class="flex flex-col items-center border rounded px-4 py-3 font-semibold text-lg lg:py-2 lg:px-3">

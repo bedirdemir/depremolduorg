@@ -1,5 +1,5 @@
 <template>
-    <header class="flex justify-between items-center py-5 px-2 border-b border-gray-500 lg:px-1">
+    <header class="flex justify-between items-center py-5 px-2 border-b border-gray-300 lg:px-1">
         <div class="flex items-center space-x-1">
             <svg class="w-12 text-primary" fill="currentColor" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 47 47" xml:space="preserve">
         <g>
