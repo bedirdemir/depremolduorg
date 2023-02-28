@@ -2,7 +2,7 @@
     <section class="px-2 py-3 min-h-screen lg:p-4">
         <list-item v-if="$store.state.EarthquakeList.isModalActive"></list-item>
         <ul v-if="$store.state.EarthquakeList.isLoaded">
-            <li v-for="(earthquake,i) in $store.state.EarthquakeList.earthquakeList" :key="i" class="mb-2 shadow">
+            <li v-for="(earthquake,i) in $store.state.EarthquakeList.list" :key="i" class="mb-2 shadow">
                 <div class="flex justify-between p-3 border rounded w-full">
                     <div class="flex items-center gap-5 w-full">
                         <span :class="getDangerColor(earthquake.magnitude)" class="flex flex-col items-center border rounded px-4 py-3 font-semibold text-lg lg:py-2 lg:px-3">
@@ -63,7 +63,8 @@
                 </div>
             </li>
         </ul>
-        <div v-else>
+
+        <div v-else class="flex h-[70vh]">
             <svg class="loading-svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid">
 <g transform="translate(80,50)">
 <g transform="rotate(0)">

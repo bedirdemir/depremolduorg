@@ -2,7 +2,7 @@ export default {
     namespaced: true,
 	state: {
 		isModalActive: false,
-		earthquakeList: null,
+		list: null,
 		isLoaded: false,
 		selectedItem: null
 	},

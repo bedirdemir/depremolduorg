@@ -13,7 +13,9 @@
             </g>
         </g>
             </svg>
-            <h1 class="text-secondary text-lg lg:text-xl">depremoldu.org</h1>
+            <a href="https://depremoldu.org/">
+                <h1 class="text-secondary text-lg lg:text-xl">depremoldu.org</h1>
+            </a>
         </div>
         <div>
             <a class="flex items-center rounded text-xs lg:text-base bg-secondary text-white p-2 cursor-pointer" @click="$store.dispatch('getData')">
