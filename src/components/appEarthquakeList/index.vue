@@ -13,7 +13,7 @@
                         </span>
                         <div class="flex flex-col w-full">
                             <div>
-                                <h2 class="text-base font-semibold max-[390px]:text-sm">{{ earthquake.region }}</h2>
+                                <h2 class="text-base font-semibold max-[420px]:text-sm">{{ earthquake.region }}</h2>
                                 <div class="flex space-x-1 items-center text-sm max-[390px]:text-xs lg:text-base">
                                     <svg class="w-3 inline-block text-gray-500" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M12,6a1,1,0,0,0-1,1v5a1,1,0,0,0,.293.707l3,3a1,1,0,0,0,1.414-1.414L13,11.586V7A1,1,0,0,0,12,6Z
