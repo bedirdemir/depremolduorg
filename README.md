@@ -1,7 +1,8 @@
-# Vue 3 + Vite
+# Recent Earthquakes - DepremOldu.org
+![visitors](https://visitor-badge.laobi.icu/badge?page_id=bedirdemir.depremolduorg)
 
-This template should help get you started developing with Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
-
-## Recommended IDE Setup
-
-- [VS Code](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
+This project shows the recent earthquakes in Türkiye. This data belong to [BOGAZICI UNIVERSITY KANDILLI OBSERVATORY AND EARTHQUAKE RESEARCH INSTITUTE (KOERI) and REGIONAL EARTHQUAKE-TSUNAMI MONITORING CENTER (RETMC)](http://www.koeri.boun.edu.tr/sismo/2/tr/).
+## API
+> https://github.com/bedirdemir/kandilli-earthquake-api
+## License
+[MIT](https://choosealicense.com/licenses/mit/)
