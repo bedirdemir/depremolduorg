@@ -2,7 +2,7 @@ export default {
     namespaced: true,
 	state: {
 		isModalActive: false,
-		list: null,
+		list: [],
 		isLoaded: false,
 		selectedItem: null
 	},

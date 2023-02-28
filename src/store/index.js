@@ -17,7 +17,12 @@ const store = createStore({
 			state.EarthquakeList.isLoaded = false;
 			appAxios.get("/")
 			.then(res => {
-				state.EarthquakeList.list = res.data;
+				state.EarthquakeList.list = [];
+				// state.EarthquakeList.list = res.data;
+				
+				for(let i = 0; i < 100; i++){
+					state.EarthquakeList.list.push(res.data[i]);
+				};
 				state.EarthquakeList.isLoaded = true;
 			});
 		}
