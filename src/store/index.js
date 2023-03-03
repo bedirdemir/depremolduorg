@@ -35,7 +35,7 @@ const store = createStore({
 						const content = `
 							<b>${res.data[i].region}</b>
 							<br>
-							<b>Tarih: </b>${res.data[i].date} ${res.data[i].time}
+							<b>Tarih: </b>${res.data[i].date} - ${res.data[i].time}
 							<br>
 							<b>Büyüklük: </b>${res.data[i].magnitude} ${res.data[i].scale}
 							<br>
