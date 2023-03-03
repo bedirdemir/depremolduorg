@@ -11,6 +11,11 @@ const routes = [
 		name: "EarthquakeMap",
 		path: "/map",
 		component: () => import('../views/Map.vue')
+	},
+	{
+		name: "Information",
+		path: "/inform",
+		component: () => import('../views/Inform.vue')
 	}
 ];
 

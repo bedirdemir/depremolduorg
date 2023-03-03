@@ -11,6 +11,11 @@
 		            Deprem Haritası
 	            </router-link>
             </li>
+            <li>
+                <router-link to='/inform' class="pb-1 lg:pb-2 hover:text-primary transition-all text-sm lg:text-base" active-class="text-primary border-b-2 border-primary">
+		            Bilgilendirme
+	            </router-link>
+            </li>
         </ul>
     </nav>
 </template>
