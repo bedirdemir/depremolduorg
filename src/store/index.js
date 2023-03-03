@@ -31,7 +31,7 @@ const store = createStore({
 					state.EarthquakeList.isLoaded = true;
 				}else if(state.route == "EarthquakeMap"){
 					state.EarthquakeMap.geojsonFeature.features = [];
-					for(let i = 0; i < 400; i++){
+					for(let i = 0; i < 500; i++){
 						const content = `
 							<b>${res.data[i].region}</b>
 							<br>

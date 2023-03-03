@@ -3,7 +3,7 @@
         <div v-if="$store.state.EarthquakeMap.isLoaded">
             <map-comp></map-comp>
         </div>
-        <div v-else class="flex h-[70vh]">
+        <div v-else class="flex h-[75vh]">
             <svg class="loading-svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid">
 <g transform="translate(80,50)">
 <g transform="rotate(0)">
