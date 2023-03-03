@@ -2,7 +2,7 @@
     <div class="modal" :class="{active: $store.state.EarthquakeList.isModalActive}">
         <div class="bg-white p-3 rounded flex flex-col w-11/12 lg:w-5/12">
             <div class="flex justify-end mb-3">
-                <a @click="$store.commit('EarthquakeList/modalToggle')" class="flex items-center bg-primary text-white rounded cursor-pointer p-2">
+                <a @click="$store.commit('EarthquakeList/modalToggle')" class="flex items-center bg-primary text-white rounded cursor-pointer px-2 py-1 lg:p-2">
                     <svg class="w-6 mr-1" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
 <g clip-path="url(#clip0_429_11083)">
 <path d="M7 7.00006L17 17.0001M7 17.0001L17 7.00006" stroke="#fff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
