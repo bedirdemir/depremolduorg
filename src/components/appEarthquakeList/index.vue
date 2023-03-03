@@ -1,5 +1,5 @@
 <template>
-    <section class="px-2 py-3 min-h-screen lg:p-4">
+    <section class="py-3 px-2 min-h-screen lg:px-0">
         <list-item v-if="$store.state.EarthquakeList.isModalActive"></list-item>
         <ul v-if="$store.state.EarthquakeList.isLoaded">
             <li v-for="(earthquake,i) in $store.state.EarthquakeList.list" :key="i" class="mb-2 shadow">

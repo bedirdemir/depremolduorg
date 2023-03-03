@@ -73,6 +73,9 @@ const store = createStore({
 					state.EarthquakeMap.isLoaded = true;
 				}
 				
+			})
+			.catch(function (error) {
+				console.log(error);
 			});
 		}
 	}

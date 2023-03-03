@@ -1,5 +1,5 @@
 <template>
-    <section class="py-3 min-h-[70%] lg:p-4">
+    <section class="min-h-[70%]">
         <div v-if="$store.state.EarthquakeMap.isLoaded">
             <map-comp></map-comp>
         </div>
