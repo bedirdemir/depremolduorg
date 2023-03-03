@@ -33,9 +33,9 @@ export default {
             },
             pointToLayer: (feature, latlng) => {
                 return L.circleMarker(latlng, {
-                    radius: 10,
+                    radius: 8,
                     color: "#000",
-                    weight: 5,
+                    weight: 3,
                     opacity: 0.8,
                     fillOpacity: 1
                 });

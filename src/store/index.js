@@ -6,7 +6,7 @@ import EarthquakeMap from "./modules/EarthquakeMap.js";
 
 const store = createStore({
 	state: {
-		route: null
+		currentRoute: null
 	},
 	modules: {
 		EarthquakeList,
@@ -14,7 +14,7 @@ const store = createStore({
 	},
 	mutations: {
 		setRoute(state, route){
-			state.route = route;
+			state.currentRoute = route;
 		}
 	},
 	actions: {
@@ -23,13 +23,13 @@ const store = createStore({
 			state.EarthquakeMap.isLoaded = false;
 			appAxios.get("/")
 			.then(res => {
-				if(state.route == "RecentList"){
+				if(state.currentRoute == "RecentList"){
 					state.EarthquakeList.list = [];
 					for(let i = 0; i < 100; i++){
 						state.EarthquakeList.list.push(res.data[i]);
 					};
 					state.EarthquakeList.isLoaded = true;
-				}else if(state.route == "EarthquakeMap"){
+				}else if(state.currentRoute == "EarthquakeMap"){
 					state.EarthquakeMap.geojsonFeature.features = [];
 					for(let i = 0; i < 500; i++){
 						const content = `
@@ -38,6 +38,8 @@ const store = createStore({
 							<b>Tarih: </b>${res.data[i].date} - ${res.data[i].time}
 							<br>
 							<b>Büyüklük: </b>${res.data[i].magnitude} ${res.data[i].scale}
+							<br>
+							<b>Derinlik: </b>${res.data[i].depth} km
 							<br>
 							<b>Koordinat: </b>${res.data[i].lat}, ${res.data[i].long}
 							`;
