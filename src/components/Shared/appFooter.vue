@@ -6,7 +6,7 @@
             </a>
             <a href="https://bedirdemir.com" target="_blank" class="bg-zinc-900 text-white h-6 px-2 rounded-full">bedirdemir.com</a>
         </div>
-        <div class="max-w-sm text-sm mx-5 lg:text-xs text-center text-gray-500 lg:text-right">
+        <div class="max-w-sm text-sm mx-5 lg:mx-0 lg:text-xs text-center text-gray-500 lg:text-right">
             <p>
                 Veriler Boğaziçi Üniversitesi Kandilli Rasathanesi ve Deprem Araştırma Enstitüsü Bölgesel Deprem-Tsunami İzleme Ve Değerlendirme Merkezi'nden gelmektedir.
                 <a href="http://www.koeri.boun.edu.tr/sismo/2/tr/" target="_blank" class="text-blue-800">

@@ -1,6 +1,10 @@
 export default {
     namespaced: true,
 	state: {
-		contactItem: "Map module içerisindeki bilgi"
+		isLoaded: false,
+        geojsonFeature: {
+            "type": "FeatureCollection",
+            "features": []
+        }
 	}
 };

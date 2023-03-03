@@ -6,6 +6,7 @@ import store from "./store/index.js";
 import { appAxios } from './utils/appAxios.js';
 
 import appHeader from "./components/Shared/appHeader.vue";
+import appNavigation from "./components/Shared/appNavigation.vue";
 import appFooter from "./components/Shared/appFooter.vue";
 
 const app = createApp(App);
@@ -15,5 +16,6 @@ app.use(store);
 app.config.globalProperties.$appAxios = appAxios;
 
 app.component("appHeader", appHeader);
+app.component("appNavigation", appNavigation);
 app.component("appFooter", appFooter);
 app.mount('#app');

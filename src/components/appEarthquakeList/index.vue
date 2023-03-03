@@ -141,7 +141,7 @@ export default {
         ListItem
     },
     created(){
-        this.$store.dispatch("getData")
+        this.$store.dispatch("getData");
     },
     methods: {
         getRelativeTime(date, time){
@@ -150,8 +150,8 @@ export default {
         getDangerColor(magnitude){
             magnitude = Number(magnitude);
             if (magnitude >= 6.0){
-                return {'bg-red-700': true, 'text-white': true}
-            }else if (magnitude > 4.5 && magnitude < 6.0){
+                return {'bg-red-900': true, 'text-white': true}
+            }else if (magnitude > 4.4 && magnitude < 6.0){
                 return {'bg-red-500': true, 'text-white': true}
             }else{
                 return {'bg-yellow-300': true}
