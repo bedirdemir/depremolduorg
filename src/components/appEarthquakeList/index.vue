@@ -2,6 +2,12 @@
     <section class="py-3 px-2 min-h-screen lg:px-0">
         <list-item v-if="$store.state.EarthquakeList.isModalActive"></list-item>
         <ul v-if="$store.state.EarthquakeList.isLoaded">
+            <div class="flex items-center justify-center mb-3">
+                <div class="px-2 py-1 bg-yellow-300 text-xs">Küçük</div>
+                <div class="px-2 py-1 bg-red-500 text-xs text-white">Orta</div>
+                <div class="px-2 py-1 bg-red-900 text-xs text-white">Büyük</div>
+                <div class="px-2 py-1 bg-zinc-800 text-xs text-white">Çok Büyük</div>
+            </div>
             <li v-for="(earthquake,i) in $store.state.EarthquakeList.list" :key="i" class="mb-2 shadow">
                 <div class="flex justify-between p-3 border rounded w-full">
                     <div class="flex items-center gap-5 w-full">
@@ -149,9 +155,11 @@ export default {
         },
         getDangerColor(magnitude){
             magnitude = Number(magnitude);
-            if (magnitude >= 6.0){
+            if (magnitude >= 6.5){
+                return {'bg-zinc-800': true, 'text-white': true}
+            }else if (magnitude >= 5.5 && magnitude < 6.5){
                 return {'bg-red-900': true, 'text-white': true}
-            }else if (magnitude > 4.4 && magnitude < 6.0){
+            }else if (magnitude >= 4.5 && magnitude < 5.5){
                 return {'bg-red-500': true, 'text-white': true}
             }else{
                 return {'bg-yellow-300': true}

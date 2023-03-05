@@ -25,7 +25,7 @@ const store = createStore({
 			.then(res => {
 				if(state.currentRoute == "RecentList"){
 					state.EarthquakeList.list = [];
-					for(let i = 0; i < 100; i++){
+					for(let i = 0; i < 150; i++){
 						state.EarthquakeList.list.push(res.data[i]);
 					};
 					state.EarthquakeList.isLoaded = true;
@@ -45,9 +45,11 @@ const store = createStore({
 							`;
 						const color = () => {
 							let magnitude = Number(res.data[i].magnitude);
-							if (magnitude >= 6.0){
+							if (magnitude >= 6.5){
+								return "#27272a"
+							}else if (magnitude >= 5.5 && magnitude < 6.5){
 								return "#7f1d1d"
-							}else if (magnitude > 4.4 && magnitude < 6.0){
+							}else if (magnitude >= 4.5 && magnitude < 5.5){
 								return "#ef4444"
 							}else{
 								return "#fde047"

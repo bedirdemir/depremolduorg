@@ -41,7 +41,7 @@ export default {
         }).addTo(this.map);
 
         L.marker([this.selectedItem.lat, this.selectedItem.long]).addTo(this.map)
-        .bindPopup(`${this.selectedItem.region} - ${this.selectedItem.magnitude}`)
+        .bindPopup(`${this.selectedItem.region} - <b>${this.selectedItem.magnitude} ${this.selectedItem.scale}</b>`)
         .openPopup();
     }
 }
