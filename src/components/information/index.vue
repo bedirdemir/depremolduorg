@@ -17,7 +17,7 @@
                 <a href="https://evrimagaci.org/deprem-oncesinde-sirasinda-ve-sonrasinda-neler-yapilmali-374" target="_blank">
                     <h2 class="mb-2 text-xl lg:text-2xl font-bold tracking-tight text-primary">Deprem Öncesinde ve Sonrasında Yapmanız Gerekenler</h2>
                 </a>
-                <p class="mb-3 font-normal text-sm lg:text-base text-gray-700">Panik yapmayın! Panik yapmaya başladıktan sonra hata yapmaya da başlarsınız! Binanızın önünden uzaklaşın! Deprem sonrasında dışarı çıktıktan sonra binanızın önünde beklemeyin.</p>
+                <p class="mb-3 font-normal text-sm lg:text-base text-gray-700">Panik yapmayın! Panik yapmaya başladıktan sonra hata yapmaya da başlarsınız! Binanızın önünden uzaklaşın! Dışarı çıktıktan sonra binanızın önünde beklemeyin.</p>
                 <a href="https://evrimagaci.org/deprem-oncesinde-sirasinda-ve-sonrasinda-neler-yapilmali-374" target="_blank" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-secondary rounded-lg hover:opacity-80">
                     Devamını oku
                     <svg aria-hidden="true" class="w-4 h-4 ml-2 -mr-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
@@ -105,7 +105,7 @@
                 <a href="https://evrimagaci.org/richter-olcegi-nedir-depremin-buyuklugu-siddeti-ve-gucu-arasindaki-fark-nedir-2128" target="_blank">
                     <h2 class="mb-2 text-xl lg:text-2xl font-bold tracking-tight text-primary">Richter Ölçeği Nedir? Depremin Büyüklüğü, Şiddeti ve Gücü Arasındaki Fark Nedir?</h2>
                 </a>
-                <p class="mb-3 font-normal text-sm lg:text-base text-gray-700">Depremin Büyüklüğü ile Şiddeti Arasında Ne Fark Var? Bir Deprem Sırasında Ne Kadar Enerji Açığa Çıkar?</p>
+                <p class="mb-3 font-normal text-sm lg:text-base text-gray-700">Depremin büyüklüğü ile şiddeti arasında ne fark var? Bir deprem sırasında ne kadar enerji açığa çıkar?</p>
                 <a href="https://evrimagaci.org/richter-olcegi-nedir-depremin-buyuklugu-siddeti-ve-gucu-arasindaki-fark-nedir-2128" target="_blank" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-secondary rounded-lg hover:opacity-80">
                     Devamını oku
                     <svg aria-hidden="true" class="w-4 h-4 ml-2 -mr-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
