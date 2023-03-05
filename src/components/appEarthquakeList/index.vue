@@ -157,9 +157,9 @@ export default {
             magnitude = Number(magnitude);
             if (magnitude >= 6.5){
                 return {'bg-zinc-800': true, 'text-white': true}
-            }else if (magnitude >= 5.5 && magnitude < 6.5){
+            }else if (magnitude >= 5.0 && magnitude < 6.5){
                 return {'bg-red-900': true, 'text-white': true}
-            }else if (magnitude >= 4.5 && magnitude < 5.5){
+            }else if (magnitude >= 4.0 && magnitude < 5.0){
                 return {'bg-red-500': true, 'text-white': true}
             }else{
                 return {'bg-yellow-300': true}

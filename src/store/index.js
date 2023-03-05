@@ -47,9 +47,9 @@ const store = createStore({
 							let magnitude = Number(res.data[i].magnitude);
 							if (magnitude >= 6.5){
 								return "#27272a"
-							}else if (magnitude >= 5.5 && magnitude < 6.5){
+							}else if (magnitude >= 5.0 && magnitude < 6.5){
 								return "#7f1d1d"
-							}else if (magnitude >= 4.5 && magnitude < 5.5){
+							}else if (magnitude >= 4.0 && magnitude < 5.0){
 								return "#ef4444"
 							}else{
 								return "#fde047"
