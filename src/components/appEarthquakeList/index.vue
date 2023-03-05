@@ -8,7 +8,7 @@
                 <div class="px-2 py-1 bg-red-900 text-xs text-white">Büyük</div>
                 <div class="px-2 py-1 bg-zinc-800 text-xs text-white rounded-r">Çok Büyük</div>
             </div>
-            <li v-for="(earthquake,i) in $store.state.EarthquakeList.list" :key="i" class="mb-2 shadow">
+            <li v-for="(earthquake,i) in $store.state.EarthquakeList.list" :key="i" class="mb-2 shadow bg-[#FCFFE760]">
                 <div class="flex justify-between p-3 border rounded w-full">
                     <div class="flex items-center gap-5 w-full">
                         <span :class="getDangerColor(earthquake.magnitude)" class="flex flex-col items-center border rounded px-4 py-3 font-semibold text-lg lg:py-2 lg:px-3">
