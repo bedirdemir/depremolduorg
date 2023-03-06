@@ -1,5 +1,4 @@
 import { createRouter, createWebHistory } from 'vue-router';
-import store from '../store/index.js';
 
 const routes = [
 	{
@@ -24,9 +23,9 @@ const router = createRouter({
 	history: createWebHistory()
 });
 
-router.beforeEach((to, from, next) => {
-	store.commit('setRoute', to.name);
-	next();
-  });
+// router.beforeEach((to, from, next) => {
+// 	store.commit('setRoute', to.name);
+// 	next();
+// });
 
 export default router;

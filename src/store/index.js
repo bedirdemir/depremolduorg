@@ -1,13 +1,11 @@
 import { createStore } from "vuex";
 import { appAxios } from '../utils/appAxios.js';
+import router  from '../router/index.js';
 
 import EarthquakeList from "./modules/EarthquakeList.js";
 import EarthquakeMap from "./modules/EarthquakeMap.js";
 
 const store = createStore({
-	state: {
-		currentRoute: null
-	},
 	modules: {
 		EarthquakeList,
 		EarthquakeMap
@@ -23,13 +21,13 @@ const store = createStore({
 			state.EarthquakeMap.isLoaded = false;
 			appAxios.get("/")
 			.then(res => {
-				if(state.currentRoute == "RecentList"){
+				if(router.currentRoute.value.name == "RecentList"){
 					state.EarthquakeList.list = [];
 					for(let i = 0; i < 150; i++){
 						state.EarthquakeList.list.push(res.data[i]);
 					};
 					state.EarthquakeList.isLoaded = true;
-				}else if(state.currentRoute == "EarthquakeMap"){
+				}else if(router.currentRoute.value.name == "EarthquakeMap"){
 					state.EarthquakeMap.geojsonFeature.features = [];
 					for(let i = 0; i < 500; i++){
 						const content = `
