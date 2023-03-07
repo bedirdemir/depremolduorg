@@ -20,7 +20,7 @@ const store = createStore({
 			state.isLoaded = false;
 
 			if(router.currentRoute.value.name == "RecentList"){
-				appAxios.get("/last/150")
+				appAxios.get("/last/200")
 				.then(res => {
 					state.EarthquakeList.list = res.data;
 					state.isLoaded = true;
