@@ -17,19 +17,24 @@ const store = createStore({
 	},
 	actions: {
 		getData({state}){
-			state.EarthquakeList.isLoaded = false;
-			state.EarthquakeMap.isLoaded = false;
-			appAxios.get("/")
-			.then(res => {
-				if(router.currentRoute.value.name == "RecentList"){
-					state.EarthquakeList.list = [];
-					for(let i = 0; i < 150; i++){
-						state.EarthquakeList.list.push(res.data[i]);
-					};
-					state.EarthquakeList.isLoaded = true;
-				}else if(router.currentRoute.value.name == "EarthquakeMap"){
+			state.isLoaded = false;
+
+			if(router.currentRoute.value.name == "RecentList"){
+				appAxios.get("/last/150")
+				.then(res => {
+					state.EarthquakeList.list = res.data;
+					state.isLoaded = true;
+				})
+				.catch(function (error) {
+					console.log(error);
+				});
+			};
+
+			if(router.currentRoute.value.name == "EarthquakeMap"){
+				appAxios.get("/last/500")
+				.then(res => {
 					state.EarthquakeMap.geojsonFeature.features = [];
-					for(let i = 0; i < 500; i++){
+					for(let i = 0; i < res.data.length; i++){
 						const content = `
 							<b>${res.data[i].region}</b>
 							<br>
@@ -72,13 +77,13 @@ const store = createStore({
 						};
 						state.EarthquakeMap.geojsonFeature.features.push(data);
 					};
-					state.EarthquakeMap.isLoaded = true;
-				}
-				
-			})
-			.catch(function (error) {
-				console.log(error);
-			});
+					state.isLoaded = true;
+				})
+				.catch(function (error) {
+					console.log(error);
+				});
+			};
+			
 		}
 	}
 });

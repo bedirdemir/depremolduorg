@@ -3,7 +3,6 @@ export default {
 	state: {
 		isModalActive: false,
 		list: [],
-		isLoaded: false,
 		selectedItem: null
 	},
 	mutations: {

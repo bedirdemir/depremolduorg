@@ -1,7 +1,7 @@
 <template>
     <section class="py-3 px-2 min-h-screen lg:px-0">
         <list-item v-if="$store.state.EarthquakeList.isModalActive"></list-item>
-        <ul v-if="$store.state.EarthquakeList.isLoaded">
+        <ul v-if="$store.state.isLoaded">
             <div class="flex mb-3 text-center w-full shadow-sm">
                 <div class="px-2 py-1 bg-yellow-300 text-xs  rounded-l w-1/4">Küçük</div>
                 <div class="px-2 py-1 bg-red-500 text-xs text-white w-1/4">Orta</div>

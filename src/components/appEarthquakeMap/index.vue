@@ -1,6 +1,6 @@
 <template>
     <section class="min-h-[70%]">
-        <div v-if="$store.state.EarthquakeMap.isLoaded">
+        <div v-if="$store.state.isLoaded">
             <map-comp></map-comp>
         </div>
         <div v-else class="flex h-[75vh]">
