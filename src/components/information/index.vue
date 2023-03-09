@@ -2,7 +2,7 @@
     <section class="py-3 px-2 min-h-screen lg:px-0">
         <div class="flex flex-col gap-4 mb-5">
 
-            <div class="w-full p-6 border border-gray-200 rounded-lg shadow">
+            <div class="w-full p-6 border border-gray-200 rounded-lg shadow bg-[#FCFFE760]">
                 <a href="https://www.afad.gov.tr/deprem-aninda-neler-yapmalisiniz" target="_blank">
                     <h2 class="mb-2 text-xl lg:text-2xl font-bold tracking-tight text-primary">Deprem Anında Yapmanız Gerekenler</h2>
                 </a>
@@ -13,7 +13,7 @@
                 </a>
             </div>
 
-            <div class="w-full p-6 border border-gray-200 rounded-lg shadow">
+            <div class="w-full p-6 border border-gray-200 rounded-lg shadow bg-[#FCFFE760]">
                 <a href="https://evrimagaci.org/deprem-oncesinde-sirasinda-ve-sonrasinda-neler-yapilmali-374" target="_blank">
                     <h2 class="mb-2 text-xl lg:text-2xl font-bold tracking-tight text-primary">Deprem Öncesinde ve Sonrasında Yapmanız Gerekenler</h2>
                 </a>
@@ -24,7 +24,7 @@
                 </a>
             </div>
 
-            <div class="w-full p-6 border border-gray-200 rounded-lg shadow">
+            <div class="w-full p-6 border border-gray-200 rounded-lg shadow bg-[#FCFFE760]">
                 <a href="https://evrimagaci.org/hayat-ucgeni-vs-cok-kapan-tutun-deprem-sirasinda-hangi-yontem-uygulanmali-9505" target="_blank">
                     <h2 class="mb-2 text-xl lg:text-2xl font-bold tracking-tight text-primary">Çök-Kapan-Tutun Deprem Esnasında Nasıl Uygulanmalı?</h2>
                 </a>
@@ -35,7 +35,7 @@
                 </a>
             </div>
         
-            <div class="w-full p-6 border border-gray-200 rounded-lg shadow">
+            <div class="w-full p-6 border border-gray-200 rounded-lg shadow bg-[#FCFFE760]">
                 <a href="https://evrimagaci.org/deprem-nedir-depremlere-sebep-olan-doga-yasalari-ve-bu-yasalari-aciklayan-modeller-nelerdir-8936" target="_blank">
                     <h2 class="mb-2 text-xl lg:text-2xl font-bold tracking-tight text-primary">Deprem Nedir? Neden Oluşur?</h2>
                 </a>
@@ -46,7 +46,7 @@
                 </a>
             </div>
 
-            <div class="w-full p-6 border border-gray-200 rounded-lg shadow">
+            <div class="w-full p-6 border border-gray-200 rounded-lg shadow bg-[#FCFFE760]">
                 <a href="https://www.youtube.com/watch?v=t0qdFLHZ-Kc" target="_blank">
                     <h2 class="mb-2 text-xl lg:text-2xl font-bold tracking-tight text-primary">Çocuklar İçin Deprem Bilgilendirmesi</h2>
                 </a>
@@ -57,7 +57,7 @@
                 </a>
             </div>
 
-            <div class="w-full p-6 border border-gray-200 rounded-lg shadow">
+            <div class="w-full p-6 border border-gray-200 rounded-lg shadow bg-[#FCFFE760]">
                 <a href="https://www.youtube.com/watch?v=uUakx0hRFGI" target="_blank">
                     <h2 class="mb-2 text-xl lg:text-2xl font-bold tracking-tight text-primary">Depremler Tahmin Edilebilir Mi?</h2>
                 </a>
@@ -68,7 +68,7 @@
                 </a>
             </div>
 
-            <div class="w-full p-6 border border-gray-200 rounded-lg shadow">
+            <div class="w-full p-6 border border-gray-200 rounded-lg shadow bg-[#FCFFE760]">
                 <a href="https://evrimagaci.org/deprem-isiklari-depremler-sirasinda-neden-gokyuzunde-isiklar-beliriyor-13416" target="_blank">
                     <h2 class="mb-2 text-xl lg:text-2xl font-bold tracking-tight text-primary">Deprem Işıkları Nedir?</h2>
                 </a>
@@ -79,7 +79,7 @@
                 </a>
             </div>
 
-            <div class="w-full p-6 border border-gray-200 rounded-lg shadow">
+            <div class="w-full p-6 border border-gray-200 rounded-lg shadow bg-[#FCFFE760]">
                 <a href="https://evrimagaci.org/tsunami-nedir-turkiyede-tsunami-olabilir-mi-eger-olursa-nasil-onlem-almaliyiz-ve-tsunami-sirasinda-neler-yapilmali-9496" target="_blank">
                     <h2 class="mb-2 text-xl lg:text-2xl font-bold tracking-tight text-primary">Tsunami Nedir? Türkiye'de Tsunami Olabilir mi?</h2>
                 </a>
@@ -90,7 +90,7 @@
                 </a>
             </div>
 
-            <div class="w-full p-6 border border-gray-200 rounded-lg shadow">
+            <div class="w-full p-6 border border-gray-200 rounded-lg shadow bg-[#FCFFE760]">
                 <a href="https://evrimagaci.org/deprem-sonrasi-beslenme-dogal-afetlerde-beslenme-nasil-olmali-14014" target="_blank">
                     <h2 class="mb-2 text-xl lg:text-2xl font-bold tracking-tight text-primary">Deprem Sonrası Beslenme: Doğal Afetlerde Beslenme Nasıl Olmalı?</h2>
                 </a>
@@ -101,7 +101,7 @@
                 </a>
             </div>
 
-            <div class="w-full p-6 border border-gray-200 rounded-lg shadow">
+            <div class="w-full p-6 border border-gray-200 rounded-lg shadow bg-[#FCFFE760]">
                 <a href="https://evrimagaci.org/richter-olcegi-nedir-depremin-buyuklugu-siddeti-ve-gucu-arasindaki-fark-nedir-2128" target="_blank">
                     <h2 class="mb-2 text-xl lg:text-2xl font-bold tracking-tight text-primary">Richter Ölçeği Nedir? Depremin Büyüklüğü, Şiddeti ve Gücü Arasındaki Fark Nedir?</h2>
                 </a>
