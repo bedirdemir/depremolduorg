@@ -33,7 +33,6 @@ export default {
             },
             pointToLayer: (feature, latlng) => {
                 return L.circleMarker(latlng, {
-                    radius: 8,
                     color: "#000",
                     weight: 3,
                     opacity: 0.8,
@@ -51,19 +50,19 @@ export default {
                         <div class='bg-primary p-1 text-white text-center'>SON 500 DEPREM</div>
                         <div class="flex items-end items-center p-1 space-x-2 bg-white">
                             <div class='flex gap-1 items-center'>
-                                <div class='rounded-full p-2 bg-[#fde047] border-2 border-black'></div>
+                                <div class='rounded-full p-[.25rem] bg-[#fde047] border-2 border-black'></div>
                                 Küçük
                             </div>
                             <div class='flex gap-1 items-center'>
-                                <div class='rounded-full p-2 bg-[#ef4444] border-2 border-black'></div>
+                                <div class='rounded-full p-[.36rem] bg-[#ef4444] border-2 border-black'></div>
                                 Orta
                             </div>
                             <div class='flex gap-1 items-center'>
-                                <div class='rounded-full p-2 bg-[#7f1d1d] border-2 border-black'></div>
+                                <div class='rounded-full p-[.48rem] bg-[#7f1d1d] border-2 border-black'></div>
                                 Büyük
                             </div>
                             <div class='flex gap-1 items-center'>
-                                <div class='rounded-full p-2 bg-[#27272a] border-2 border-black'></div>
+                                <div class='rounded-full p-[.56rem] bg-[#27272a] border-2 border-black'></div>
                                 Çok Büyük
                             </div>
                         </div>

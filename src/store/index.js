@@ -46,16 +46,28 @@ const store = createStore({
 							<br>
 							<b>Koordinat: </b>${res.data[i].lat}, ${res.data[i].long}
 							`;
-						const color = () => {
+						const style = () => {
 							let magnitude = Number(res.data[i].magnitude);
 							if (magnitude >= 6.5){
-								return "#27272a"
+								return {
+									fillColor:"#27272a",
+									radius: 11
+								}
 							}else if (magnitude >= 5.0 && magnitude < 6.5){
-								return "#7f1d1d"
+								return {
+									fillColor:"#7f1d1d",
+									radius: 9
+								}
 							}else if (magnitude >= 4.0 && magnitude < 5.0){
-								return "#ef4444"
+								return {
+									fillColor:"#ef4444",
+									radius: 7
+								}
 							}else{
-								return "#fde047"
+								return {
+									fillColor:"#fde047",
+									radius: 5
+								}
 							}
 						};
 						const data = {
@@ -69,9 +81,7 @@ const store = createStore({
 							"type": "Feature",
 							"properties": {
 								"popupContent": content,
-								"style": {
-									fillColor: color()
-								}
+								"style": style()
 							},
 							"id": i
 						};
