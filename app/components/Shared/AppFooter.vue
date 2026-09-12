@@ -10,6 +10,9 @@
       </a>
     </div>
     <div class="max-w-sm text-sm mx-5 lg:mx-0 lg:text-xs text-center text-gray-500 lg:text-right">
+      <p class="mb-2">
+        <NuxtLink to="/gizlilik" class="underline hover:text-primary transition-all">Gizlilik Politikası</NuxtLink>
+      </p>
       <p>
         Veriler Boğaziçi Üniversitesi Kandilli Rasathanesi ve Deprem Araştırma Enstitüsü Bölgesel Deprem-Tsunami İzleme Ve Değerlendirme Merkezi'nden gelmektedir.
         <a href="http://www.koeri.boun.edu.tr/sismo/2/tr/" target="_blank" class="text-blue-800">
