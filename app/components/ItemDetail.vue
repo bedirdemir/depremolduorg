@@ -14,15 +14,26 @@
   </div>
 </template>
 <script setup>
+import { addLibertyBaseLayer } from "~/utils/maplibre";
+
 const earthquakeStore = useEarthquakeStore();
 const selectedItem = earthquakeStore.selectedItem;
 
 onMounted(() => {
-  const map = L.map("mapContainer").setView([selectedItem.lat, selectedItem.long], 9);
-  L.tileLayer("https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png", {
-    maxZoom: 16,
-    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>'
-  }).addTo(map);
+  const map = L.map("mapContainer", {
+    minZoom: 1,
+    maxZoom: 18,
+    maxBounds: [
+      [-85, -Infinity],
+      [85, Infinity]
+    ],
+    maxBoundsViscosity: 1
+  }).setView([selectedItem.lat, selectedItem.long], 9);
+
+  addLibertyBaseLayer(map).catch(error => {
+    console.error("OpenFreeMap Liberty katmanı yüklenemedi", error);
+  });
+
   L.marker([selectedItem.lat, selectedItem.long]).addTo(map).bindPopup(`${selectedItem.region}<br><b>${selectedItem.magnitude} ${selectedItem.scale}</b>`).openPopup();
 });
 </script>

@@ -6,5 +6,6 @@
       <slot />
     </main>
     <AppFooter />
+    <AppPromoNotification />
   </div>
 </template>

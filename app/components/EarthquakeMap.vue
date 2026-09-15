@@ -2,6 +2,8 @@
   <div id="mapContainer" class="min-h-[75vh]"></div>
 </template>
 <script setup>
+import { addLibertyBaseLayer } from "~/utils/maplibre";
+
 const earthquakeStore = useEarthquakeStore();
 
 onMounted(() => {
@@ -91,12 +93,19 @@ onMounted(() => {
   }
 
   const map = L.map("mapContainer", {
-    preferCanvas: true
-  }).setView([39.13, 35.211], 5);
-  L.tileLayer("https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png", {
+    preferCanvas: true,
+    minZoom: 1,
     maxZoom: 16,
-    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>'
-  }).addTo(map);
+    maxBounds: [
+      [-85, -Infinity],
+      [85, Infinity]
+    ],
+    maxBoundsViscosity: 1
+  }).setView([39.13, 35.211], 5);
+
+  addLibertyBaseLayer(map).catch(error => {
+    console.error("OpenFreeMap Liberty katmanı yüklenemedi", error);
+  });
 
   function onEachFeature(feature, layer) {
     if (feature.properties && feature.properties.popupContent) {

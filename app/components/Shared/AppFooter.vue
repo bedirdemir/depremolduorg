@@ -1,6 +1,6 @@
 <template>
   <footer class="flex items-center flex-col-reverse pt-8 pb-6 px-1 gap-8 border-t border-gray-300 lg:flex-row lg:justify-between">
-    <div class="flex items-center">
+    <div class="flex items-center gap-3">
       <a href="https://github.com/bedirdemir/depremolduorg-nuxtjs" target="_blank">
         <svg class="w-6 text-black-600" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512">
           <path
@@ -8,6 +8,7 @@
           ></path>
         </svg>
       </a>
+      <AppDownloadBadge v-if="isIos" size="md" />
     </div>
     <div class="max-w-sm text-sm mx-5 lg:mx-0 lg:text-xs text-center text-gray-500 lg:text-right">
       <p class="mb-2">
@@ -26,3 +27,10 @@
     </div>
   </footer>
 </template>
+<script setup>
+import { computed } from "vue";
+import { useAppPlatform } from "~/composables/useAppPlatform";
+
+const platform = useAppPlatform();
+const isIos = computed(() => platform.value === "ios");
+</script>
