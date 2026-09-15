@@ -1,7 +1,7 @@
 <template>
   <ClientOnly>
     <Transition enter-active-class="transition duration-300 ease-out" enter-from-class="translate-y-4 opacity-0" enter-to-class="translate-y-0 opacity-100" leave-active-class="transition duration-200 ease-in" leave-from-class="translate-y-0 opacity-100" leave-to-class="translate-y-4 opacity-0">
-      <aside v-if="isVisible && promo" class="fixed inset-x-0 bottom-[calc(4rem+env(safe-area-inset-bottom))] z-50 mx-auto w-[calc(100%-1.5rem)] max-w-sm lg:bottom-8 lg:left-auto lg:right-8 lg:mx-0">
+      <aside v-if="isVisible && promo" class="fixed inset-x-0 bottom-[calc(1rem+env(safe-area-inset-bottom))] z-50 mx-auto w-[calc(100%-1.5rem)] max-w-sm lg:bottom-8 lg:left-auto lg:right-8 lg:mx-0">
         <div class="relative max-h-[25vh] overflow-hidden rounded-xl border border-stone-200 bg-white p-4 shadow-2xl">
           <button type="button" class="absolute right-2.5 top-2.5 cursor-pointer rounded-full bg-primary p-1 text-white transition-opacity hover:opacity-80" aria-label="Bildirimi kapat" @click="dismiss">
             <svg class="h-3.5 w-3.5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
